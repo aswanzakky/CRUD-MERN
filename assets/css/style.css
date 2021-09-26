@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap");
 
 :root {
-  --dark: #4250e4;
+  --title:#ffffff;
+  --dark: #4cec8a;
   --light: #adb5bd;
   --border: #dee2e6;
   --border-btn: #edf2f4;
@@ -48,7 +49,7 @@ a {
 }
 
 .text-dark {
-  color: var(--dark);
+  color: var(--title);
 }
 
 .inline {
@@ -67,7 +68,7 @@ a {
 }
 
 #header nav {
-  background-color: #ebb400;
+  background-color: #4cec8a;
   padding: 1em 0;
   width: 100%;
 }
@@ -106,7 +107,7 @@ table {
 }
 
 .table tr:hover {
-  background-color: #ffe02e;
+  background-color: #89e4ac;
 }
 
 .table tr:hover td > a {
@@ -205,13 +206,13 @@ table {
 }
 
 .radio input[type="radio"]:checked + .radio-label:before {
-  background-color: #ffda35;
+  background-color: #89e4ac;
   box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type="radio"]:focus + .radio-label:before {
   outline: none;
-  border-color: #ffda35;
+  border-color: #89e4ac;
 }
 
 .radio input[type="radio"]:disabled + .radio-label:before {
@@ -220,11 +221,21 @@ table {
   background: #b4b4b4;
 }
 
-#update_user .form-group .btn,
+#update_user .form-group .btn{
+  width: 100%;
+  padding: 0.9em 1em;
+  background-color: #89e4ac;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0.2em;
+  margin: 0.5em 0;
+}
 #add_user .form-group .btn {
   width: 100%;
   padding: 0.9em 1em;
-  background-color: #ffda35;
+  background-color: #89e4ac;
   border: none;
   font-family: "PT Sans", sans-serif;
   font-size: 1em;
@@ -233,7 +244,10 @@ table {
   margin: 0.5em 0;
 }
 
-#update_user .form-group .btn:hover,
+#update_user .form-group .btn:hover{
+  background-color: var(--dark);
+  color: var(--border);
+}
 #add_user .form-group .btn:hover {
   background-color: var(--dark);
   color: var(--border);
